@@ -1,3 +1,14 @@
+# DEPRECATED #
+
+DummyAuthenticator is now a [part of JupyterHub core](https://github.com/jupyterhub/jupyterhub/blob/4e7936056744cdad31d608388a349207196efa56/jupyterhub/auth.py#L1122). 
+You can migrate to it by setting:
+
+```python
+c.JupyterHub.authenticator_class = "dummy"
+```
+
+The JupyterHub documentation has more information on [how to setup a development environment](https://jupyterhub.readthedocs.io/en/stable/contributing/setup.html)
+
 # Dummy JupyterHub Authenticator #
 
 Simple authenticator for [JupyterHub](http://github.com/jupyter/jupyterhub/)
